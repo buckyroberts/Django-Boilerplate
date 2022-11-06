@@ -86,19 +86,6 @@ docs = ["furo (>=2022.6.21)", "sphinx (>=5.1.1)", "sphinx-autodoc-typehints (>=1
 testing = ["covdefaults (>=2.2)", "coverage (>=6.4.2)", "pytest (>=7.1.2)", "pytest-cov (>=3)", "pytest-timeout (>=2.1)"]
 
 [[package]]
-name = "flake8"
-version = "5.0.4"
-description = "the modular source code checker: pep8 pyflakes and co"
-category = "dev"
-optional = false
-python-versions = ">=3.6.1"
-
-[package.dependencies]
-mccabe = ">=0.7.0,<0.8.0"
-pycodestyle = ">=2.9.0,<2.10.0"
-pyflakes = ">=2.5.0,<2.6.0"
-
-[[package]]
 name = "identify"
 version = "2.5.8"
 description = "File identification library for Python"
@@ -108,14 +95,6 @@ python-versions = ">=3.7"
 
 [package.extras]
 license = ["ukkonen"]
-
-[[package]]
-name = "mccabe"
-version = "0.7.0"
-description = "McCabe checker, plugin for flake8"
-category = "dev"
-optional = false
-python-versions = ">=3.6"
 
 [[package]]
 name = "nodeenv"
@@ -158,22 +137,6 @@ name = "psycopg2"
 version = "2.9.5"
 description = "psycopg2 - Python-PostgreSQL Database Adapter"
 category = "main"
-optional = false
-python-versions = ">=3.6"
-
-[[package]]
-name = "pycodestyle"
-version = "2.9.1"
-description = "Python style guide checker"
-category = "dev"
-optional = false
-python-versions = ">=3.6"
-
-[[package]]
-name = "pyflakes"
-version = "2.5.0"
-description = "passive checker of Python programs"
-category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -237,7 +200,7 @@ testing = ["coverage (>=6.2)", "coverage-enable-subprocess (>=1)", "flaky (>=3.7
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "81ceca0ef932497928c6d51d20fbc4594b53ae37f781e88747ea414a0dc8bf53"
+content-hash = "e0d2a6c5522b10824aecd55c1b18ebb60ecdf3236c0f50b9dfbc636a0f4b6fce"
 
 [metadata.files]
 asgiref = []
@@ -251,15 +214,11 @@ django-filter = []
 django-split-settings = []
 djangorestframework = []
 filelock = []
-flake8 = []
 identify = []
-mccabe = []
 nodeenv = []
 platformdirs = []
 pre-commit = []
 psycopg2 = []
-pycodestyle = []
-pyflakes = []
 pytz = []
 pyyaml = [
     {file = "PyYAML-6.0-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:d4db7c7aef085872ef65a8fd7d6d09a14ae91f691dec3e87ee5ee0539d516f53"},
