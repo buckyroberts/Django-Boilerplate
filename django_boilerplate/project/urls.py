@@ -1,10 +1,12 @@
-from django.conf import settings
+import logging
+
 from django.contrib import admin
 from django.urls import path
 
-# TODO: Remove tests
-print(settings.DEBUG)
-print(settings.SECRET_KEY)
+logger = logging.getLogger(__name__)
+logger.debug('This is a debug message')
+logger.info('This is a info message')
+logger.warning('This is a warning message')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
