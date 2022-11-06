@@ -21,4 +21,9 @@ run-server:
 superuser:
 	 poetry run python -m django_boilerplate.manage createsuperuser
 
+.PHONY: up-dependencies-only
+up-dependencies-only:
+	test -f .env || touch .env
+	docker compose -f docker-compose.yml up --force-recreate db
+
 update: install migrate install-pre-commit ;

@@ -44,8 +44,14 @@ WSGI_APPLICATION = 'django_boilerplate.project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': '/Users/bucky/Desktop/Projects/Django-Boilerplate/db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'django_boilerplate',
+        'USER': 'django_boilerplate',
+        'PASSWORD': 'django_boilerplate',
+        'HOST': 'localhost',
+        'PORT': '5432',
+        'ATOMIC_REQUESTS': True,
+        'CONN_MAX_AGE': 600,
     }
 }
 
